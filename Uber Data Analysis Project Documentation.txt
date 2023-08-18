@@ -1,0 +1,55 @@
+Uber Data Analysis project notes and other details
+---------------------------------------------------
+2023/08/18
+-----------
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------
+This project is using various technologies, including GCP Storage, Python, Compute Instance, Mage Data Pipeline Tool, BigQuery, and Looker Studio.
+---------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+GCP Services:
+-------------
+1) Cloud storage:
+-----------------
+Google cloud storage is an online file storage service provided by Google as part of its cloud computing platform.
+It allows to store and retrieve data in the cloud, which makes it accessible from anywhere with the help of an 
+internet connection.
+
+2) Compute Engine:
+------------------
+Google compute is a cloud computing service that provides virtual machines for running applications and services. 
+It allows one to easily create, configure, and manage virtual machines with various operating systems and hardware
+configurations. 
+
+3) Big Query:
+-------------
+BigQuery is a cloud-based datawarehouse provided by Google Cloud Platform that allows you to store, analyze, and query
+large datasets using SQL-like syntax. It is a serverless, highly scalable, cost effective solution that can process 
+and analyze terabytes to petabytes of data in real-time. 
+
+4) Looker:
+----------
+Looker studio is a web-based data visualization and reporting tool that allows to create interactive dashboards and reports
+from a variety of data sources, including Google analytics, Google sheets, and BigQuery. It enables you to turn your data 
+into informative and engaging visualizations, which can be easily shared and collaborated on with others. 
+
+
+
+
+Fact and Dimension Table:
+-------------------------
+Fact Table:
+-----------
+- Contains quantitative measures or metrics that are used for analysis.
+- Typically contains foreign keys that link to dimension tables.
+- Contains columns that have high cardinality and change frequently.
+- Contains columns that are not used by analysis by themselves, but are necessary for calculating metrics
+
+Dimension Table:
+----------------
+- Contains columns that describe attributes of the data being analyzed.
+- Typically contains primary keys that link to fact tables.
+- Contains columns that have low cardinality and don't change frequently.
+- Contains columns that can be used for grouping or filtering data for analysis.
