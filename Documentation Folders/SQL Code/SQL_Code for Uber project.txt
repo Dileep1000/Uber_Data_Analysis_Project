@@ -1,0 +1,22 @@
+select 
+f.VendorID,
+
+from 
+
+data-science-personal-project1.uber_data_analysis_personal_project.fact_table f
+
+JOIN data-science-personal-project1.uber_data_analysis_personal_project.datetime_dim d ON d.datetime_ID = f.datetime_ID
+
+JOIN data-science-personal-project1.uber_data_analysis_personal_project.trip_distance_dim td ON td.trip_distance_id = f.trip_distance_id
+
+JOIN data-science-personal-project1.uber_data_analysis_personal_project.passenger_count_dim pc ON pc.passenger_count_id = f.passenger_count_id
+
+JOIN data-science-personal-project1.uber_data_analysis_personal_project.rate_code_dim rc ON rc.rate_code_id = f.rate_code_id
+
+JOIN data-science-personal-project1.uber_data_analysis_personal_project.pickup_location_dim pl ON pl.pickup_location_id = f.pickup_location_id
+
+JOIN data-science-personal-project1.uber_data_analysis_personal_project.dropoff_location_dim dl ON dl.dropoff_location_id = f.dropoff_location_id
+
+JOIN data-science-personal-project1.uber_data_analysis_personal_project.payment_type_dim pt ON pt.payment_type_id = f.payment_type_id
+
+limit 10;
